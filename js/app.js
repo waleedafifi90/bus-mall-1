@@ -140,18 +140,6 @@ const imgGenerate = function () {
     rightRandIndex = randImagesIndex(0, productArray.length - 1);
   } while (rightRandIndex === middleRandIndex || rightRandIndex === leftRandIndex);
 
-  // for (;;) {
-  //   // this is basiclly another way of creating a while loop
-
-  //   middleRandIndex = randImagesIndex(0, productArray.length - 1); //getting a random image for the middle section
-  //   //
-  //   if (!(middleRandIndex === leftRandIndex)) {
-  //     //BUG //BUG //BUG
-  //     // makeing sure that the middle section image differs from the left section image
-  //     break;
-  //   }
-  // }
-
   // adding the random img path to the middle img element in the html
   middleProductImgae.src = all[middleRandIndex].image;
   middleProductImgae.alt = all[middleRandIndex].name;
